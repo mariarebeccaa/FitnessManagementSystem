@@ -30,13 +30,14 @@ The system allows the following **main actions**:
 
 The system makes use of the following **key object types**:
 
-- `Client` – Represents a gym client with personal details, subscription, reservations, and payments.
-- `Trainer` – Represents a fitness trainer with a specialty and personal info.
-- `FitnessClass` – Represents a scheduled class with a name, date/time, and assigned trainer.
-- `Reservation` – Represents a client's booking for a fitness class.
-- `Subscription` – Represents the type, price, and validity period of a client’s gym membership.
-- `Payment` – Represents a payment transaction made by a client, including the amount and date.
-- `FitnessService` – A service class that contains the logic for managing clients, trainers, classes, payments, and reservations.
-- `Main` – The entry point of the application, with a text-based menu interface for user interaction.
+
+1. `Client` – represents a person enrolled in the gym
+2. `Trainer` – represents a fitness trainer with a specialty
+3. `FitnessClass` – a class/session scheduled at a certain date/time
+4. `Subscription` – a client's membership plan with duration and price
+5. `Payment` – generic class to track payment information
+6. `CardPayment` – subclass of `Payment`, used for card-based payments
+7. `CashPayment` – subclass of `Payment`, used for cash payments
+8. `Employee` – represents employees of the fitness center 
 
 ---
